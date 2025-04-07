@@ -19,11 +19,11 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('/books', 'BookController@getAll');
-$router->get('/books/{id}', 'BookController@getOne');
-$router->post('/books/add', 'BookController@save');
-$router->post('/books/edit/{id}', 'BookController@update');
-$router->delete('/books/delete/{id}', 'BookController@delete');
+$router->get('/events', 'EventController@index');
+$router->get('/events/{id}', 'EventController@show');
+$router->post('/events', 'EventController@store');
+$router->put('/events/{id}', 'EventController@update');
+$router->delete('/events/{id}', 'EventController@destroy');
 
 
 
