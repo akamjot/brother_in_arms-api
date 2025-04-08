@@ -25,6 +25,11 @@ $router->post('/events', 'EventController@store');
 $router->put('/events/{id}', 'EventController@update');
 $router->delete('/events/{id}', 'EventController@destroy');
 
+$router->get('/news', 'NewsController@index');
+$router->get('/news/{id}', 'NewsController@show');
+$router->post('/news', 'NewsController@store');
+$router->put('/news/{id}', 'NewsController@update');
+$router->delete('/news/{id}', 'NewsController@destroy');
 
 
 

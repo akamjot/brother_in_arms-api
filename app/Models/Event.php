@@ -16,6 +16,7 @@ class Event extends Model
         'date',
         'location',
         'time',
+        'poster',
         'updates',
         'video',
         'about_event',
