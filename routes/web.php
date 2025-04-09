@@ -31,6 +31,13 @@ $router->post('/news', 'NewsController@store');
 $router->put('/news/{id}', 'NewsController@update');
 $router->delete('/news/{id}', 'NewsController@destroy');
 
+$router->get('/gallery', 'GalleryController@index');
+$router->get('/gallery/{id}', 'GalleryController@show');
+$router->post('/gallery', 'GalleryController@store');
+$router->put('/gallery/{id}', 'GalleryController@update');
+$router->delete('/gallery/{id}', 'GalleryController@destroy');
+
+
 
 
 
