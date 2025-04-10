@@ -37,6 +37,12 @@ $router->post('/gallery', 'GalleryController@store');
 $router->put('/gallery/{id}', 'GalleryController@update');
 $router->delete('/gallery/{id}', 'GalleryController@destroy');
 
+$router->get('/letters', 'LetterController@index');
+$router->get('/letters/{id}', 'LetterController@show');
+$router->post('/letters', 'LetterController@store');
+$router->put('/letters/{id}', 'LetterController@update');
+$router->delete('/letters/{id}', 'LetterController@destroy');
+
 
 
 
